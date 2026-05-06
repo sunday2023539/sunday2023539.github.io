@@ -302,24 +302,28 @@ footer {
 }
 
 .page-title h1 {
-  color: #143d35;
+  color: #0F3D2A
+
+;
 }
 
 .project-card h2 {
-  color: #143d35;
+  color: #0F3D2A
+
+;
 }
   /* =========================
    GLOBAL PAGE TITLES
 ========================= */
 
 .page-title {
-  border-top: 5px solid #143d35 !important;
+  border-top: 5px solid #0F3D2A !important;
   padding-top: 35px;
   margin-bottom: 35px;
 }
 
 .page-title h1 {
-  color: #143d35 !important;
+  color: #0F3D2A !important;
   font-size: 42px;
   margin-bottom: 12px;
 }
@@ -329,7 +333,7 @@ footer {
 ========================= */
 
 .section h2 {
-  color: #143d35 !important;
+  color: #0F3D2A !important;
   font-size: 28px;
   margin-bottom: 15px;
 }
@@ -339,7 +343,7 @@ footer {
 ========================= */
 
 .project-card h2 {
-  color: #143d35 !important;
+  color: #0F3D2A !important;
   font-size: 24px;
   margin-bottom: 10px;
 }
