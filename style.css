@@ -308,4 +308,62 @@ footer {
 .project-card h2 {
   color: #143d35;
 }
+  /* =========================
+   GLOBAL PAGE TITLES
+========================= */
+
+.page-title {
+  border-top: 5px solid #143d35 !important;
+  padding-top: 35px;
+  margin-bottom: 35px;
+}
+
+.page-title h1 {
+  color: #143d35 !important;
+  font-size: 42px;
+  margin-bottom: 12px;
+}
+
+/* =========================
+   SECTION HEADINGS
+========================= */
+
+.section h2 {
+  color: #143d35 !important;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+/* =========================
+   PROJECT / SKILL CARD TITLES
+========================= */
+
+.project-card h2 {
+  color: #143d35 !important;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* =========================
+   OPTIONAL SUBHEADINGS
+========================= */
+
+.project-card h3,
+.section h3 {
+  color: #143d35 !important;
+}
+
+/* =========================
+   NAVIGATION TABS
+========================= */
+
+.top-nav a {
+  color: #143d35 !important;
+  border-bottom: 5px solid #143d35 !important;
+}
+
+.top-nav a:hover {
+  color: #1f6b59 !important;
+  border-color: #1f6b59 !important;
+}
 }
