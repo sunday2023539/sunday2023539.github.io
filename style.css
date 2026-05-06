@@ -81,15 +81,17 @@ body {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
 .project-card {
-  border: 1px solid #ddd;
-  background: #fafafa;
-  padding: 24px;
+  background: #fff;
+  border: 1px solid #d8dee3;
+  border-radius: 26px;
+  padding: 36px;
 }
+
 
 .project-image {
   height: 210px;
