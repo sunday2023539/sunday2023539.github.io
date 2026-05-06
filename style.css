@@ -22,26 +22,28 @@ body {
 .top-nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 14px;
   margin-bottom: 70px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  overflow-x: auto;
 }
 
 .top-nav a {
-  min-width: 120px;
-  padding-bottom: 12px;
+  padding: 0 8px 12px;
   border-bottom: 5px solid #111;
   text-decoration: none;
   color: #111;
   font-size: 14px;
   font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 .top-nav a:hover {
   color: #0a5c4a;
   border-color: #0a5c4a;
 }
-
 .hero {
   position: relative;
   margin-bottom: 70px;
