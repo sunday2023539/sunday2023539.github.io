@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+:root {
+  --green: #0F3D2A;
+  --green-light: #1f6b59;
+  --cream: #eee9df;
+  --text: #14213d;
+  --muted: #555;
+  --border: #d8dee3;
+}
+
 body {
   background: #f4f4f4;
   font-family: Arial, Helvetica, sans-serif;
@@ -12,16 +21,27 @@ body {
 }
 
 /* =========================
-   GENERAL MULTI-PAGE LAYOUT
+   FULL PAGE LAYOUT
 ========================= */
 
 .page {
-  width: min(1100px, 92%);
-  margin: 50px auto;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
   background: #fff;
-  padding: 40px 90px 80px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.16);
+  padding: 40px 8% 80px;
 }
+
+.homepage {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  background: var(--cream);
+}
+
+/* =========================
+   NAVIGATION
+========================= */
 
 .top-nav {
   display: flex;
@@ -35,9 +55,9 @@ body {
 
 .top-nav a {
   padding: 0 8px 12px;
-  border-bottom: 5px solid #111;
+  border-bottom: 5px solid var(--green);
   text-decoration: none;
-  color: #111;
+  color: var(--green);
   font-size: 14px;
   font-weight: 700;
   white-space: nowrap;
@@ -45,39 +65,59 @@ body {
 }
 
 .top-nav a:hover {
-  color: #0a5c4a;
-  border-color: #0a5c4a;
+  color: var(--green-light);
+  border-color: var(--green-light);
 }
 
+/* =========================
+   PAGE TITLES
+========================= */
+
 .page-title {
-  border-top: 5px solid #111;
+  border-top: 5px solid var(--green);
   padding-top: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 45px;
 }
 
 .page-title h1 {
-  font-size: 42px;
+  color: var(--green);
+  font-size: 46px;
   margin-bottom: 12px;
 }
 
 .page-title p {
-  color: #555;
-  max-width: 780px;
+  color: var(--muted);
+  max-width: 850px;
+  font-size: 18px;
 }
+
+/* =========================
+   SECTIONS
+========================= */
 
 .section {
   margin-top: 45px;
 }
 
+.section h2,
+.section h3 {
+  color: var(--green);
+}
+
 .section h2 {
-  font-size: 28px;
+  font-size: 30px;
   margin-bottom: 15px;
 }
 
 .section p {
   color: #444;
-  max-width: 850px;
+  max-width: 900px;
+  font-size: 17px;
 }
+
+/* =========================
+   PROJECT / SKILL CARDS
+========================= */
 
 .project-grid {
   display: grid;
@@ -87,11 +127,31 @@ body {
 
 .project-card {
   background: #fff;
-  border: 1px solid #0a5c4a;
+  border: 1px solid var(--border);
   border-radius: 26px;
   padding: 36px;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.05);
 }
 
+.project-card:hover {
+  border-color: var(--green);
+  transform: translateY(-4px);
+  transition: 0.25s ease;
+}
+
+.project-card h2,
+.project-card h3 {
+  color: var(--green);
+  font-size: 26px;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.project-card p {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.8;
+}
 
 .project-image {
   height: 210px;
@@ -106,55 +166,30 @@ body {
   place-items: center;
   font-weight: 700;
   margin-bottom: 20px;
-}
-
-.project-card h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.project-card p {
-  color: #444;
-  margin-bottom: 18px;
+  border-radius: 18px;
 }
 
 .button {
   display: inline-block;
   color: #fff;
-  background: #111;
+  background: var(--green);
   text-decoration: none;
   padding: 10px 16px;
   font-weight: 700;
+  border-radius: 10px;
 }
 
-.contact-list a {
-  color: #111;
-  font-weight: 700;
-}
-
-footer {
-  margin-top: 70px;
-  padding-top: 25px;
-  border-top: 1px solid #ddd;
-  color: #666;
-  font-size: 14px;
+.button:hover {
+  background: var(--green-light);
 }
 
 /* =========================
    HOMEPAGE DESIGN
 ========================= */
 
-.homepage {
-  width: min(1200px, 96%);
-  margin: 20px auto;
-  background: #eee9df;
-  min-height: 90vh;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
-}
-
 .site-header {
-  padding: 22px 34px;
-  border-bottom: 3px solid #264c3f;
+  padding: 22px 6%;
+  border-bottom: 3px solid var(--green);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -169,7 +204,7 @@ footer {
 
 .main-nav {
   display: flex;
-  gap: 28px;
+  gap: 26px;
   flex-wrap: wrap;
 }
 
@@ -186,12 +221,12 @@ footer {
 
 .hero-academic {
   margin-top: 170px;
-  background: #143d35;
+  background: var(--green);
   min-height: 430px;
   display: grid;
   grid-template-columns: 1fr 1.25fr;
   align-items: center;
-  padding: 0 90px 60px;
+  padding: 0 8% 60px;
 }
 
 .hero-photo {
@@ -235,14 +270,142 @@ footer {
 }
 
 /* =========================
+   CONTACT PAGE
+========================= */
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.contact-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 26px;
+  padding: 36px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
+}
+
+.contact-card h2 {
+  color: var(--green);
+  font-size: 38px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+}
+
+.contact-card p {
+  font-size: 17px;
+  color: #24324a;
+  margin-bottom: 28px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  padding: 22px 0;
+  border-top: 1px solid var(--border);
+}
+
+.contact-icon {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  background: #dcefe5;
+  color: var(--green);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.contact-item h3 {
+  color: var(--green);
+  font-size: 18px;
+  margin-bottom: 4px;
+}
+
+.contact-item a {
+  color: #007c78;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-form label {
+  color: var(--green);
+  font-weight: 800;
+  margin-top: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 16px 18px;
+  font-size: 16px;
+  font-family: inherit;
+}
+
+.contact-form textarea {
+  min-height: 170px;
+  resize: vertical;
+}
+
+.contact-form button {
+  margin-top: 12px;
+  background: var(--green);
+  color: #fff;
+  border: none;
+  padding: 16px 22px;
+  border-radius: 18px;
+  font-size: 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: var(--green-light);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  margin-top: 70px;
+  padding-top: 25px;
+  border-top: 1px solid #ddd;
+  color: #666;
+  font-size: 14px;
+}
+
+/* =========================
    RESPONSIVE
 ========================= */
 
-@media (max-width: 900px) {
+@media (max-width: 1000px) {
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 700px) {
   .page {
-    padding: 28px 24px 60px;
-    margin: 20px auto;
+    padding: 28px 6% 60px;
   }
 
   .top-nav {
@@ -263,7 +426,7 @@ footer {
   .hero-academic {
     margin-top: 80px;
     grid-template-columns: 1fr;
-    padding: 40px 28px;
+    padding: 40px 6%;
   }
 
   .hero-photo {
@@ -282,185 +445,8 @@ footer {
   .hero-content h1 {
     font-size: 42px;
   }
-  .page-title {
-  border-top: 5px solid #143d35;
-}
 
-.page-title h1 {
-  color: #0F3D2A
-
-;
-}
-
-.project-card h2 {
-  color: #0F3D2A
-
-;
-}
-  /* =========================
-   GLOBAL PAGE TITLES
-========================= */
-
-.page-title {
-  border-top: 5px solid #0F3D2A !important;
-  padding-top: 35px;
-  margin-bottom: 35px;
-}
-
-.page-title h1 {
-  color: #0F3D2A !important;
-  font-size: 42px;
-  margin-bottom: 12px;
-}
-
-/* =========================
-   SECTION HEADINGS
-========================= */
-
-.section h2 {
-  color: #0F3D2A !important;
-  font-size: 28px;
-  margin-bottom: 15px;
-}
-
-/* =========================
-   PROJECT / SKILL CARD TITLES
-========================= */
-
-.project-card h2 {
-  color: #0F3D2A !important;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-/* =========================
-   OPTIONAL SUBHEADINGS
-========================= */
-
-.project-card h3,
-.section h3 {
-  color: #143d35 !important;
-}
-
-/* =========================
-   NAVIGATION TABS
-========================= */
-
-.top-nav a {
-  color: #143d35 !important;
-  border-bottom: 5px solid #143d35 !important;
-}
-
-.top-nav a:hover {
-  color: #1f6b59 !important;
-  border-color: #1f6b59 !important;
-}
-  .contact-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.2fr;
-  gap: 40px;
-  margin-top: 40px;
-}
-
-.contact-card {
-  background: #fff;
-  border: 1px solid #d8dee3;
-  border-radius: 26px;
-  padding: 36px;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.06);
-}
-
-.contact-card h2 {
-  color: #143d35;
-  font-size: 38px;
-  line-height: 1.1;
-  margin-bottom: 24px;
-}
-
-.contact-card p {
-  font-size: 17px;
-  color: #24324a;
-  margin-bottom: 28px;
-}
-
-.contact-item {
-  display: flex;
-  gap: 18px;
-  align-items: center;
-  padding: 22px 0;
-  border-top: 1px solid #d8dee3;
-}
-
-.contact-icon {
-  width: 54px;
-  height: 54px;
-  border-radius: 16px;
-  background: #dcefe5;
-  color: #006b5f;
-  display: grid;
-  place-items: center;
-  font-weight: 800;
-  font-size: 20px;
-  flex-shrink: 0;
-}
-
-.contact-item h3 {
-  color: #143d35;
-  font-size: 18px;
-  margin-bottom: 4px;
-}
-
-.contact-item a {
-  color: #007c78;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.contact-form label {
-  color: #143d35;
-  font-weight: 800;
-  margin-top: 8px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  border: 1px solid #d8dee3;
-  border-radius: 18px;
-  padding: 16px 18px;
-  font-size: 16px;
-  font-family: inherit;
-}
-
-.contact-form textarea {
-  min-height: 170px;
-  resize: vertical;
-}
-
-.contact-form button {
-  margin-top: 12px;
-  background: #143d35;
-  color: #fff;
-  border: none;
-  padding: 16px 22px;
-  border-radius: 18px;
-  font-size: 16px;
-  font-weight: 800;
-  cursor: pointer;
-}
-
-.contact-form button:hover {
-  background: #1f6b59;
-}
-
-@media (max-width: 900px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
+  .page-title h1 {
+    font-size: 38px;
   }
 }
