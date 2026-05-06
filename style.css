@@ -297,4 +297,15 @@ footer {
   .hero-content h1 {
     font-size: 42px;
   }
+  .page-title {
+  border-top: 5px solid #143d35;
+}
+
+.page-title h1 {
+  color: #143d35;
+}
+
+.project-card h2 {
+  color: #143d35;
+}
 }
