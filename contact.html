@@ -2,36 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Contact | Babafemi Sunday Olatunji</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
+
   <main class="page">
+
     <nav class="top-nav">
-  <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="projects.html">Projects</a>
-  <a href="thesis.html">Master Thesis</a>
-  <a href="skills.html">Skills</a>
-  <a href="cv.pdf" target="_blank">Résumé</a>
-  <a href="contact.html">Contact</a>
-</nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="thesis.html">Master Thesis</a>
+      <a href="skills.html">Skills</a>
+      <a href="cv.pdf" target="_blank">Résumé</a>
+      <a href="contact.html">Contact</a>
+    </nav>
 
     <section class="page-title">
       <h1>Contact</h1>
-      <p>You can contact me through email, GitHub, or LinkedIn.</p>
+      <p>Feel free to reach out for collaboration, project discussions, or opportunities.</p>
     </section>
 
-    <section class="section contact-list">
-      <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/sunday2023539" target="_blank">github.com/sunday2023539</a></p>
-      <p>LinkedIn: <a href="#" target="_blank">Add your LinkedIn link</a></p>
+    <section class="contact-grid">
+
+      <div class="contact-card">
+        <h2>Contact Information</h2>
+        <p>
+          Feel free to reach out for academic collaboration, professional networking,
+          project discussions, or opportunities related to GIS, data analysis,
+          geoinformatics, and spatial technologies.
+        </p>
+
+        <div class="contact-item">
+          <div class="contact-icon">E</div>
+          <div>
+            <h3>Email</h3>
+            <a href="mailto:your-email@example.com">your-email@example.com</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">G</div>
+          <div>
+            <h3>GitHub</h3>
+            <a href="https://github.com/sunday2023539" target="_blank">github.com/sunday2023539</a>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">L</div>
+          <div>
+            <h3>LinkedIn</h3>
+            <a href="#" target="_blank">LinkedIn Profile</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h2>Send a Message</h2>
+        <p>Use the form below to send me a message directly.</p>
+
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+          <label>Full Name</label>
+          <input type="text" name="name" placeholder="Your full name" required>
+
+          <label>Email Address</label>
+          <input type="email" name="email" placeholder="your.email@example.com" required>
+
+          <label>Subject</label>
+          <input type="text" name="subject" placeholder="Message subject" required>
+
+          <label>Message</label>
+          <textarea name="message" placeholder="Write your message here..." required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+
     </section>
 
     <footer>
       <p>© 2026 Babafemi Sunday Olatunji</p>
     </footer>
+
   </main>
+
 </body>
 </html>
