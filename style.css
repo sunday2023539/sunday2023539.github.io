@@ -87,7 +87,7 @@ body {
 
 .project-card {
   background: #fff;
-  border: 1px solid #d8dee3;
+  border: 1px solid #0a5c4a;
   border-radius: 26px;
   padding: 36px;
 }
@@ -124,21 +124,6 @@ body {
   background: #111;
   text-decoration: none;
   padding: 10px 16px;
-  font-weight: 700;
-}
-
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-top: 20px;
-}
-
-.skills span {
-  background: #dcefe5;
-  color: #0a3d2f;
-  padding: 8px 14px;
-  font-size: 14px;
   font-weight: 700;
 }
 
