@@ -92,7 +92,7 @@ body {
 }
 
 /* =========================
-   SECTIONS
+   GENERAL SECTIONS
 ========================= */
 
 .section {
@@ -116,7 +116,7 @@ body {
 }
 
 /* =========================
-   PROJECT / SKILL CARDS
+   PROJECTS / SKILLS GRID
 ========================= */
 
 .project-grid {
@@ -131,12 +131,12 @@ body {
   border-radius: 26px;
   padding: 36px;
   box-shadow: 0 14px 35px rgba(0, 0, 0, 0.05);
+  transition: 0.25s ease;
 }
 
 .project-card:hover {
   border-color: var(--green);
   transform: translateY(-4px);
-  transition: 0.25s ease;
 }
 
 .project-card h2,
@@ -169,6 +169,10 @@ body {
   border-radius: 18px;
 }
 
+/* =========================
+   BUTTONS
+========================= */
+
 .button {
   display: inline-block;
   color: #fff;
@@ -184,7 +188,7 @@ body {
 }
 
 /* =========================
-   HOMEPAGE DESIGN
+   HOMEPAGE
 ========================= */
 
 .site-header {
@@ -239,8 +243,8 @@ body {
   height: 520px;
   object-fit: cover;
   object-position: center top;
-  background: white;
   display: block;
+  border-radius: 10px;
 }
 
 .hero-content {
@@ -267,6 +271,54 @@ body {
   font-size: 18px;
   line-height: 1.8;
   color: white;
+}
+
+/* =========================
+   ABOUT PAGE
+========================= */
+
+.about-intro {
+  max-width: 950px;
+  margin-bottom: 55px;
+}
+
+.about-intro p {
+  font-size: 22px;
+  line-height: 1.9;
+  color: #24324a;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.about-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 34px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--green);
+}
+
+.about-card h2 {
+  color: var(--green);
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.about-card p {
+  color: #333;
+  line-height: 1.9;
+  font-size: 17px;
 }
 
 /* =========================
@@ -394,8 +446,13 @@ footer {
 ========================= */
 
 @media (max-width: 1000px) {
+
   .project-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
   }
 
   .contact-grid {
@@ -404,6 +461,7 @@ footer {
 }
 
 @media (max-width: 700px) {
+
   .page {
     padding: 28px 6% 60px;
   }
@@ -449,67 +507,8 @@ footer {
   .page-title h1 {
     font-size: 38px;
   }
-  /* =========================
-   ABOUT PAGE
-========================= */
-
-.about-intro {
-  max-width: 950px;
-  margin-bottom: 55px;
-}
-
-.about-intro p {
-  font-size: 22px;
-  line-height: 1.9;
-  color: #24324a;
-}
-
-.about-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-}
-
-.about-card {
-  background: #fff;
-  border: 1px solid #d8dee3;
-  border-radius: 24px;
-  padding: 34px;
-  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
-  transition: 0.3s ease;
-}
-
-.about-card:hover {
-  transform: translateY(-4px);
-  border-color: #0F3D2A;
-}
-
-.about-card h2 {
-  color: #0F3D2A;
-  margin-bottom: 18px;
-  font-size: 30px;
-  line-height: 1.2;
-}
-
-.about-card p {
-  color: #333;
-  line-height: 1.9;
-  font-size: 17px;
-}
-
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
 
   .about-intro p {
     font-size: 19px;
   }
-
 }
-
