@@ -154,19 +154,19 @@ body {
 }
 
 .project-image {
-  height: 210px;
-  background: linear-gradient(
-    135deg,
-    #cfe8f3 0%,
-    #cfe8f3 50%,
-    #dcefe5 50%,
-    #dcefe5 100%
-  );
-  display: grid;
-  place-items: center;
-  font-weight: 700;
-  margin-bottom: 20px;
+  height: 220px;
+  margin-bottom: 22px;
   border-radius: 18px;
+  overflow: hidden;
+  background: #dcefe5;
+  position: relative;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 /* =========================
