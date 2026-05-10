@@ -449,4 +449,67 @@ footer {
   .page-title h1 {
     font-size: 38px;
   }
+  /* =========================
+   ABOUT PAGE
+========================= */
+
+.about-intro {
+  max-width: 950px;
+  margin-bottom: 55px;
 }
+
+.about-intro p {
+  font-size: 22px;
+  line-height: 1.9;
+  color: #24324a;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.about-card {
+  background: #fff;
+  border: 1px solid #d8dee3;
+  border-radius: 24px;
+  padding: 34px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+  transition: 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-4px);
+  border-color: #0F3D2A;
+}
+
+.about-card h2 {
+  color: #0F3D2A;
+  margin-bottom: 18px;
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+.about-card p {
+  color: #333;
+  line-height: 1.9;
+  font-size: 17px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-intro p {
+    font-size: 19px;
+  }
+
+}
+
