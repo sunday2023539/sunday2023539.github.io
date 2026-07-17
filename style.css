@@ -442,80 +442,6 @@ footer {
 }
 
 /* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 1000px) {
-
-  .project-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .about-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 700px) {
-
-  .page {
-    padding: 28px 6% 60px;
-  }
-
-  .top-nav {
-    justify-content: flex-start;
-    margin-bottom: 45px;
-  }
-
-  .project-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .site-header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 20px;
-  }
-
-  .hero-academic {
-    margin-top: 80px;
-    grid-template-columns: 1fr;
-    padding: 40px 6%;
-  }
-
-  .hero-photo {
-    margin-top: -90px;
-  }
-
-  .hero-photo img {
-    height: 420px;
-  }
-
-  .hero-content {
-    padding-left: 0;
-    margin-top: 35px;
-  }
-
-  .hero-content h1 {
-    font-size: 42px;
-  }
-
-  .page-title h1 {
-    font-size: 38px;
-  }
-
-  .about-intro p {
-  font-size: 19px;
-}
-
-}
-
-
-   /* =========================
    THESIS PAGE
 ========================= */
 
@@ -577,21 +503,8 @@ footer {
   margin-top: 20px;
 }
 
+
 /* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-
-  .thesis-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .thesis-intro h2 {
-    font-size: 28px;
-  }
-
-  /* =========================
    INTERNSHIP PAGE
 ========================= */
 
@@ -627,6 +540,87 @@ footer {
   font-size: 14px;
   font-weight: 700;
 }
-  
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  .project-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
 }
-  
+
+@media (max-width: 900px) {
+
+  .thesis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .thesis-intro h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+
+  .page {
+    padding: 28px 6% 60px;
+  }
+
+  .top-nav {
+    justify-content: flex-start;
+    margin-bottom: 45px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .hero-academic {
+    margin-top: 80px;
+    grid-template-columns: 1fr;
+    padding: 40px 6%;
+  }
+
+  .hero-photo {
+    margin-top: -90px;
+  }
+
+  .hero-photo img {
+    height: 420px;
+  }
+
+  .hero-content {
+    padding-left: 0;
+    margin-top: 35px;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .page-title h1 {
+    font-size: 38px;
+  }
+
+  .about-intro p {
+    font-size: 19px;
+  }
+}
