@@ -1,65 +1,152 @@
-<main class="section">
-  <h1>Internship at IGN/LASTIG</h1>
+<main class="page-content">
 
-  <p>
-    During my internship at IGN/LASTIG/ENSG-Géomatique in Paris, France,
-    I worked on the visualization and analysis of ensemble coastal flood data
-    for the Arcachon Basin.
-  </p>
+  <section class="hero-section">
+    <h1>Internship at IGN/LASTIG</h1>
+    <h2>Coastal Flood Visualization and Map Deformation</h2>
 
-  <p>
-    My work focused on flood exposure mapping, AOI selection, vector deformation,
-    raster polar-log deformation, and interactive 3D web visualization.
-  </p>
+    <p>
+      During my internship at IGN/LASTIG/ENSG-Géomatique in Paris, France,
+      I worked on the visualization and analysis of ensemble coastal flood data
+      for the Arcachon Basin. My work focused on flood exposure mapping,
+      AOI-based vector deformation, raster polar-log deformation, and 3D web visualization.
+    </p>
 
-  <h2>Internship Focus</h2>
-  <ul>
-    <li>Processing and visualizing ensemble coastal flood data</li>
-    <li>Creating flood occurrence and exposure maps</li>
-    <li>Defining Areas of Interest around exposed coastal zones</li>
-    <li>Developing AOI-based vector deformation calculations</li>
-    <li>Testing raster polar-log deformation methods</li>
-    <li>Building interactive web visualizations using Leaflet and MapLibre GL JS</li>
-  </ul>
+    <p>
+      <strong>Host:</strong> IGN / LASTIG / ENSG-Géomatique, Paris, France<br>
+      <strong>Duration:</strong> April 2026 – September 2026<br>
+      <strong>Role:</strong> Geovisualization and Spatial Analysis Intern
+    </p>
+  </section>
 
-  <h2>Tools and Technologies</h2>
-  <p>
-    Python, ArcGIS Pro, QGIS, GeoPandas, Shapely, NumPy, Pandas,
-    Matplotlib, Leaflet, MapLibre GL JS.
-  </p>
 
-  <h2>Selected Outputs</h2>
+  <section class="section">
+    <h2>Internship Focus</h2>
 
-  <div class="project-grid">
-    <div class="project-card">
-      <h3>AOI-Based Vector Deformation</h3>
-      <p>
-        I calculated the position of each AOI in polar deformation space
-        using angle, radius, and normalized distance between minimum and maximum boundaries.
-      </p>
+    <div class="project-grid">
+
+      <article class="project-card">
+        <h3>Flood Exposure Mapping</h3>
+        <p>
+          I processed ensemble coastal flood data and created visual outputs
+          to show flood occurrence and exposed coastal areas around Arcachon Bay.
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h3>AOI-Based Vector Deformation</h3>
+        <p>
+          I calculated AOI centroid coordinates, angles, radius values,
+          and normalized positions between minimum and maximum boundaries.
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h3>Raster Polar-Log Deformation</h3>
+        <p>
+          I tested an image-based deformation method by transforming the map
+          into polar-log space using a centre point and distance image.
+        </p>
+      </article>
+
+      <article class="project-card">
+        <h3>3D Web Visualization</h3>
+        <p>
+          I created a symbolic 3D AOI priority map using MapLibre GL JS,
+          where height represents AOI priority, not real elevation.
+        </p>
+      </article>
+
     </div>
+  </section>
 
-    <div class="project-card">
-      <h3>Raster Polar-Log Deformation</h3>
-      <p>
-        I tested an image-based deformation method by transforming the map image
-        into polar-log space using a centre point and distance image.
-      </p>
+
+  <section class="section">
+    <h2>Methodology</h2>
+
+    <p>
+      My workflow started with flood data exploration and AOI selection.
+      I then created minimum and maximum boundary layers to support the deformation framework.
+      For each AOI, I calculated the centroid, angle, radius, and relative position
+      between the boundaries. These values were used to place the AOIs in a deformed
+      polar space.
+    </p>
+
+    <p>
+      I also tested raster-based polar-log deformation, where the original map image
+      was transformed into polar space and then modified using a log-based radial transformation.
+      Finally, I developed interactive web visualizations to communicate the outputs more clearly.
+    </p>
+  </section>
+
+
+  <section class="section">
+    <h2>Selected Outputs</h2>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-image">
+          <img src="images/aoi-map.png" alt="AOI map">
+        </div>
+        <h3>AOI Map</h3>
+        <p>
+          Areas of Interest selected around exposed coastal zones in the Arcachon Basin.
+        </p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-image">
+          <img src="images/aoi-deformed-polar-space.png" alt="AOI deformed polar space">
+        </div>
+        <h3>AOI Deformed Polar Space</h3>
+        <p>
+          AOIs plotted using angle and normalized distance between the minimum
+          and maximum boundaries.
+        </p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-image">
+          <img src="images/polar-log-deformation.png" alt="Raster polar-log deformation">
+        </div>
+        <h3>Raster Polar-Log Deformation</h3>
+        <p>
+          Experimental image-based deformation showing the map transformed into polar-log space.
+        </p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-image">
+          <img src="images/3d-aoi-map.png" alt="3D AOI priority map">
+        </div>
+        <h3>3D AOI Priority Map</h3>
+        <p>
+          Interactive 3D visualization where AOI height symbolically represents priority.
+        </p>
+      </article>
+
     </div>
+  </section>
 
-    <div class="project-card">
-      <h3>3D AOI Priority Map</h3>
-      <p>
-        I created a symbolic 3D web map using MapLibre GL JS,
-        where AOI height represents priority rather than real elevation.
-      </p>
-    </div>
-  </div>
 
-  <h2>Reflection</h2>
-  <p>
-    This internship strengthened my skills in geospatial analysis, Python scripting,
-    cartographic visualization, and web mapping. It also improved my ability to explain
-    complex spatial methods clearly and professionally.
-  </p>
+  <section class="section">
+    <h2>Tools and Technologies</h2>
+
+    <p>
+      Python, ArcGIS Pro, QGIS, GeoPandas, Shapely, NumPy, Pandas,
+      Matplotlib, Leaflet, MapLibre GL JS, HTML, CSS, and JavaScript.
+    </p>
+  </section>
+
+
+  <section class="section">
+    <h2>Learning Reflection</h2>
+
+    <p>
+      This internship strengthened my skills in geospatial analysis, Python scripting,
+      cartographic visualization, deformation methods, and web mapping. It also improved
+      my ability to explain complex spatial methods clearly and to respond to supervisor feedback.
+    </p>
+  </section>
+
 </main>
