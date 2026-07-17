@@ -511,6 +511,7 @@ footer {
   .about-intro p {
     font-size: 19px;
   }
+  }
   
   /* =========================
    THESIS PAGE
@@ -587,85 +588,26 @@ footer {
   .thesis-intro h2 {
     font-size: 28px;
   }
-  
-  /* ============================= */
-/* Internship Page Styling */
-/* ============================= */
 
-.internship-section {
-  max-width: 1100px;
-  margin: 70px auto;
-  padding: 50px 40px;
-  border-top: 4px solid #0f3d2a;
-}
-
-.internship-section h1 {
-  font-size: 42px;
-  color: #0f3d2a;
-  margin-bottom: 20px;
-}
-
-.internship-section h2 {
-  font-size: 28px;
-  color: #0f3d2a;
-  margin-top: 50px;
-  margin-bottom: 25px;
-}
-
-.internship-section p {
-  font-size: 16px;
-  line-height: 1.8;
-  color: #333;
-  max-width: 850px;
-}
+  /* =========================
+   INTERNSHIP PAGE
+========================= */
 
 .internship-info {
-  margin-top: 25px;
-  padding: 20px;
+  margin-top: 28px;
   background: #f7faf8;
-  border-left: 5px solid #0f3d2a;
-  border-radius: 8px;
-}
-
-.internship-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  margin-top: 30px;
-}
-
-.internship-card {
-  background: #ffffff;
-  border: 1px solid #dce5e0;
+  border: 1px solid var(--border);
+  border-left: 6px solid var(--green);
   border-radius: 18px;
-  padding: 28px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.04);
+  padding: 24px 28px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.04);
 }
 
-.internship-card h3 {
-  color: #0f3d2a;
-  font-size: 23px;
-  margin-bottom: 15px;
-}
-
-.internship-card p {
-  font-size: 15px;
-  line-height: 1.7;
-}
-
-.internship-image {
-  width: 100%;
-  height: 180px;
-  overflow: hidden;
-  border-radius: 14px;
-  margin-bottom: 18px;
-  background: #f1f5f3;
-}
-
-.internship-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+.internship-info p {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.9;
 }
 
 .tools-list {
@@ -676,22 +618,11 @@ footer {
 }
 
 .tools-list span {
-  background: #f0f6f3;
-  color: #0f3d2a;
+  background: #dcefe5;
+  color: var(--green);
   padding: 10px 15px;
   border-radius: 25px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
 }
-
-@media (max-width: 900px) {
-  .internship-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .internship-section {
-    padding: 35px 20px;
-  }
-}
-
-
+  
