@@ -509,11 +509,13 @@ footer {
   }
 
   .about-intro p {
-    font-size: 19px;
-  }
-  
-  
-  /* =========================
+  font-size: 19px;
+}
+
+}
+
+
+   /* =========================
    THESIS PAGE
 ========================= */
 
@@ -625,5 +627,6 @@ footer {
   font-size: 14px;
   font-weight: 700;
 }
-  }
+  
+}
   
