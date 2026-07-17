@@ -4,6 +4,7 @@ Upload all files to your GitHub Pages repository:
 - index.html
 - about.html
 - projects.html
+- internship.html
 - thesis.html
 - skills.html
 - contact.html
