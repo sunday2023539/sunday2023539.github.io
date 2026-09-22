@@ -37,15 +37,16 @@
       During my internship at IGN/LASTIG/ENSG-Géomatique in Paris, France,
       I worked on the visualization and analysis of ensemble coastal flood data
       for the Arcachon Basin. My work focused on flood exposure mapping,
-      AOI-based vector deformation, raster polar-log deformation, and 3D web visualization.
+      synthetic shoreline-based representation, polar-radial deformation, mixed-scale
+      transformation and cartographic styling.
     </p>
 
     <div class="internship-info">
       <p>
-        <strong>Host Organization:</strong> IGN / LASTIG / ENSG-Géomatique, Paris, France<br>
+        <strong>Host Organization:</strong> IGN / LASTIG / GeodataParis, Paris, France<br>
         <strong>Internship Focus:</strong> Coastal flood visualization and map deformation<br>
         <strong>Role:</strong> Geovisualization and Spatial Analysis Intern<br>
-        <strong>Tools:</strong> Python, ArcGIS Pro, QGIS, Leaflet, MapLibre GL JS
+        <strong>Tools:</strong> Python, ArcGIS Pro, QGIS, Numpy, Shapely, Geopandas
       </p>
     </div>
   </section>
@@ -64,18 +65,20 @@
       </article>
 
       <article class="project-card">
-        <h3>AOI-Based Vector Deformation</h3>
+        <h3>Polar-Radial Deformation</h3>
         <p>
-          I calculated AOI centroid coordinates, angles, radius values,
-          and normalized positions between minimum and maximum boundaries.
+        I developed and tested a polar-radial deformation workflow which allows 
+        me to transform a curved coastal corridor into a normalized strip, where 
+        flood occurrence and exposed features could be compare along the coastline. 
         </p>
       </article>
 
       <article class="project-card">
-        <h3>Raster Polar-Log Deformation</h3>
+        <h3>Mixed-Scale Transformation</h3>
         <p>
-          I tested an image-based deformation method by transforming the map
-          into polar-log space using a centre point and distance image.
+         I used the a focus-and-context approach to enlarge high-risk hotspots for better
+         visibility of infrastructures while compressing safer areas to keep the overall 
+         map continuous.
         </p>
       </article>
 
@@ -89,34 +92,35 @@
 
       <article class="project-card">
         <div class="project-image">
-          <img src="images/aoi-deformed-polar-space.png" alt="AOI deformed polar space">
+          <img src="images/aoi-deformed-polar-space.png" alt="Flood corridor">
         </div>
-        <h3>AOI Deformed Polar Space</h3>
+        <h3>Deformation Flood Corridor</h3>
         <p>
-          This output shows each AOI placed in a deformation space using angle
-          and normalized distance between the minimum and maximum boundaries.
+          This output shows the maximum/outer boundary and minimum boundary of the deformation 
+          space. the clean control boundaries allows us to explicitly emphasize the specific 
+          geographic areas of interest. 
         </p>
       </article>
 
       <article class="project-card">
         <div class="project-image">
-          <img src="images/polar-log-deformation.png" alt="Raster polar-log deformation">
+          <img src="images/polar-radial-deformation.png" alt=" polar-radial deformation">
         </div>
-        <h3>Raster Polar-Log Deformation</h3>
+        <h3>Polar-Radial Deformation</h3>
         <p>
-          This output shows an experimental raster-based transformation of the map
-          from normal geographic space into polar-log space.
+          This output shows an experimental polar-radial transformation of the map
+          from normal geographic space into polar space.
         </p>
       </article>
 
       <article class="project-card">
         <div class="project-image">
-          <img src="images/3d-aoi-map.png" alt="3D AOI priority map">
+          <img src="images/3d-aoi-map.png" alt="mixed-scale map">
         </div>
-        <h3>3D AOI Priority Map</h3>
+        <h3>Mixed-Scale Transformation</h3>
         <p>
-          This 3D web visualization uses symbolic height to represent AOI priority.
-          The height does not represent real terrain elevation.
+          To effectively communicate the data, a focus-and-context cartographic
+          design was applied with appropriate cartographic styling.
         </p>
       </article>
 
@@ -135,10 +139,10 @@
       <span>NumPy</span>
       <span>Pandas</span>
       <span>Matplotlib</span>
-      <span>Leaflet</span>
-      <span>MapLibre GL JS</span>
+      <span>GeoJson</span>
+      <span>Shapefile</span>
       <span>HTML</span>
-      <span>CSS</span>
+      <span>Jupyter</span>
       <span>JavaScript</span>
     </div>
   </section>
