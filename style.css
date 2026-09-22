@@ -525,6 +525,31 @@ footer {
   line-height: 1.9;
 }
 
+/* Internship Repository Button */
+.internship-repository {
+  margin-top: 20px;
+}
+
+.repo-button {
+  display: inline-block;
+  background: var(--green);
+  color: #ffffff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.10);
+  transition: all 0.25s ease;
+}
+
+.repo-button:hover {
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 9px 20px rgba(0,0,0,0.15);
+  opacity: 0.92;
+}
+
 .tools-list {
   display: flex;
   flex-wrap: wrap;
@@ -540,7 +565,6 @@ footer {
   font-size: 14px;
   font-weight: 700;
 }
-
 
 /* =========================
    RESPONSIVE
